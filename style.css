@@ -67,10 +67,15 @@ footer a:hover{
 .idea {
     display: flex;
     margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 16px -8px #34495e;
 }
 .idea img {
     width: 60px;
     height: 60px;
+    margin-right: 32px;
 }
 .idea h3 {
     margin: 0;
