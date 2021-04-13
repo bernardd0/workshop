@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ideias - Casa Criativa</title>
+</head>
+    <body id="page-ideas">
+        <div id="container">
+            <header>
+                <a href="index.html">
+                    <img src="logo.png" alt="Logomarca">
+                </a>
+                <nav>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#" onclick="onOff()" class="button">Nova Ideia</a></li>
+                </nav>
+            </header>
+            <section id="title">
+                <p>em exibição</p>
+                <h1>Ideias</h1>
+            </section>
+            <main id="ideas">
+                <section id="ideas">
+                    <div class="idea">
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/2737/2737110.svg?token=exp=1618229452~hmac=f68907138362c41a0bdddbb66e25beff" alt="Imagem de curso de programacão">
+                        <div class="content">
+                            <h3>Curso de Programacão</h3>
+                            <p>Estudo</p>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni eum quod vel cupiditate, quia fuga veritatis facere similique soluta consectetur vero nobis deleniti animi possimus, officia incidunt maiores itaque!
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+                    <div class="idea">
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/2737/2737379.svg?token=exp=1618229396~hmac=1861680c0eb73b531b6b9d9f90535c96" alt="Imagem de videogame">
+                        <div class="content">
+                            <h3>Videogame</h3>
+                            <p>Diversao</p>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni eum quod vel cupiditate, quia fuga veritatis facere similique soluta consectetur vero nobis deleniti animi possimus, officia incidunt maiores itaque!
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+                    <div class="idea">
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/3081/3081474.svg?token=exp=1618229579~hmac=b68269aa6abe329a86944d0c51a4f795" alt="Imagem de meditacão">
+                        <div class="content">
+                            <h3>Meditacão</h3>
+                            <p>Mentalidade</p>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni eum quod vel cupiditate, quia fuga veritatis facere similique soluta consectetur vero nobis deleniti animi possimus, officia incidunt maiores itaque!
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+                    <div class="idea">
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/2933/2933488.svg?token=exp=1618264584~hmac=cc6bb9ff85b317908a48b3a40c435c08" alt="Imagem de meditacão">
+                        <div class="content">
+                            <h3>Leitura</h3>
+                            <p>Educação</p>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni eum quod vel cupiditate, quia fuga veritatis facere similique soluta consectetur vero nobis deleniti animi possimus, officia incidunt maiores itaque!
+                            </div>
+                            <a href="#">Ir para a ideia</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer">
+                Com ❤️ <a href="#">Brn0</a>
+            </footer>
+        </div>
+
+         <!--Modal-->
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="title">Título da ideia</label>
+                        <input type="text" name="title" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descricão para essa ideia</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <div class="input-wrapper">
+                        <label for="link">Link da ideia</label>
+                        <input type="url" name="link" id="">
+                    </div>
+
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="scripts.js"></script>
+    </body>
+</html>
