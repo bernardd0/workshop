@@ -1,0 +1,274 @@
+
+/*GLOBAL*/
+body {
+    background: #E5E5E5;
+    color: #25282B;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body.hideScroll{
+    overflow: hidden;
+}
+a {
+    color: #FF5E84;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+p, .description {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: justify;
+}
+.button {
+    background: #FF5E84;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 300ms;
+    box-shadow: 0px 4px 8px #19191944;
+}
+.button:hover {
+    background: #8e44ad;
+    width: 140px;
+    text-decoration: none;
+}
+
+/*STANDARD*/
+#container {
+    width: 80%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+}
+#intro {
+    width: 300px;
+    margin-right: 20px;
+}
+main {
+    margin: 32px 0;
+}
+#buttons {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#container #buttons button {
+    background: none;
+    color: #FF5E84;
+    width: 125px;
+    border: 2px solid #3498DB;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px #19191944;
+    transition: 300ms;
+}
+#container #buttons button:hover {
+    width: 140px;
+}
+footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #777;
+}
+footer a{
+    text-decoration: none;
+    opacity: 0.6;
+}
+footer a:hover{
+    color: #FF5E84;
+    font-weight: bold;
+}
+.idea {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 16px -8px #34495e;
+}
+.idea img {
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+.idea h3 {
+    margin: 0;
+}
+.idea p {
+    margin: 8px 0;
+    color: #777;
+}
+.idea .description {
+    margin: 16px 0;
+}
+.idea a {
+    display: grid;
+    text-align: end;
+    text-decoration: none;
+}
+
+/*Modal*/
+#modal {
+    background: #FF5E84;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 300ms;
+}
+#modal.addScroll {
+    overflow: auto;
+}
+#modal .content {
+    margin-top: 5%;
+    color: white;
+}
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Poderia ser utilizado no lugar #modal form*/
+.content form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #6F1E5111;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+form a{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background: #FFFFFF11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    border-radius: 28px;
+    transition: 900ms;
+    text-decoration: none;
+}
+form a:hover {
+    background: #FFF;
+    color: #FF5E84;
+}
+form button {
+    background: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+    border: none;
+}
+form button:hover {
+    width: 160px;
+    background: #0984E3;
+    color: white;
+    text-decoration: none;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+/*IDEIAS.HTML*/
+#page-ideas #container {
+    display: block;
+}
+#page-ideas header {
+    display: flex;
+    justify-content: space-between;
+}
+#page-ideas nav {
+    display: flex;
+    align-items: center;
+}
+#page-ideas nav li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+#page-ideas nav li a {
+    color: #25282B;
+    text-decoration: none;
+    transition: 300ms;
+}
+#page-ideas nav li a.button {
+    color: white;
+}
+#page-ideas nav li a:hover {
+    text-decoration: underline;
+}
+#page-ideas nav li:last-child {
+    margin: 0;
+}
+#page-ideas #title {
+    text-align: center;
+    margin: 32px 0;
+}
+#page-ideas #title p {
+    text-align: center;
+    opacity: 0.6;
+    margin: 0;
+}
+section#title h1 {
+    margin: 0;
+    font-size: 28px;
+}
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    gap: 20px;
+}
+section#ideas .idea{
+    margin: 0;
+}
+section#title,
+section#ideas,
+section#footer {
+    margin-top: 32px;
+}

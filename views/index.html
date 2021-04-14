@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section id="intro">
+        <header>
+            <a href="/">
+                <img src="logo.png" alt="Logomarca">
+            </a>
+        </header>
+        <main>
+            <p>
+                Ficar em casa em períodos longos nao é nada deve ser nada fácil.
+            </p>
+            <p>
+                Por isso iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+            </p>
+            <p>
+                Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionando novas ideias.
+            </p>
+        </main>
+        <section id="buttons">
+            <button onclick="onOff()">+Adicionar ideia</button>
+            <a href="/ideias" class="button">Ver ideias</a>
+        </section>
+        <footer id="footer">
+            Com ❤️ <a href="#">Brn0</a>
+        </footer>
+    </section>
+    <section id="last-idea">
+        {% include "tmpIdeas.html" %}
+    </section>
+{% endblock %}
