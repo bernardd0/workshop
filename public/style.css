@@ -147,7 +147,13 @@ footer a:hover{
     text-align: center;
     text-transform: uppercase;
 }
-
+#modal .content button {
+    background: white;
+    color: #FF5E84;
+    font-weight: bold;
+    border-radius: 40px;
+    outline: none;
+}
 /*Poderia ser utilizado no lugar #modal form*/
 .content form {
     width: 80%;
